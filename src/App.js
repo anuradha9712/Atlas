@@ -50,7 +50,7 @@ const App = () => {
     return (
         <div className="main-div">
             <h1>Explore the world</h1>
-            <p id="findCountry">find countries:</p>
+            <p id="findCountry">Find Countries Details</p>
             <input placeholder='Enter Country Name' value={countryName} onChange={changeName} className="input" />
 
             {showSingleCountry ?

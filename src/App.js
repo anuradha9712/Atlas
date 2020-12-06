@@ -25,7 +25,7 @@ const App = () => {
         if (countryInput.length === 1) {
             showCountryDetail(countryInput[0])
         }
-    }, [countryName])
+    }, [countryName, countries])
 
     const changeName = (event) => {
         setCountryName(event.target.value);

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './index.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const App = () => {
     const [countries, setCountry] = useState([])
@@ -82,6 +85,15 @@ const App = () => {
                             }
                         </div>
             }
+
+            <div id="footer">
+                Made with <span role="img" aria-label="heart">💚</span> by Anuradha Aggarwal
+                <div>
+                    <a href="https://github.com/anuradha9712"  ><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/anuradha-aggarwal-4a2751107/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="https://twitter.com/Anuradh06359394/"><FontAwesomeIcon icon={faTwitter} /></a>
+                </div>
+            </div>
         </div>
     )
 }

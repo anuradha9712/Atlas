@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap');
+
+html{
+  height: 100%;
+}
+
+body{
+  height:100%;
+}
+
+#root{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+ #root:before {
+  content: " ";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .2; 
+  z-index: -1;
+  background: url(./images/p9.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.input{
+  height: 40px;
+  font-size: x-large;
+}
+
+.main-div{
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1{
+    color: darkgreen;
+    font-family: 'Nerko One', cursive;
+    font-size: 80px;
+}
+
+h2{
+  color: green;
+  font-size: 60px;
+}
+
+.countryList{
+  margin: 20px;
+}
+
+.innerDiv{
+  margin: 20px;
+  display: inline-block;
+}
+
+button{
+  padding:15px;
+  background-color: #4CAF50;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+p{
+  font-family: 'Texturina', serif;
+  font-size: 35px;
+}

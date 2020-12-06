@@ -31,8 +31,10 @@ body{
 }
 
 .input{
-  height: 40px;
-  font-size: x-large;
+  /* height: 40px;
+  font-size: x-large; */
+  min-width: 50%;
+  padding: 1em;
 }
 
 .main-div{

@@ -2,4 +2,4 @@
 
 - Get Worldwide information
 
-[Live Demo](https://naughty-benz-c1e48c.netlify.app/)
+[Live Demo](https://world-explorer.netlify.app/)

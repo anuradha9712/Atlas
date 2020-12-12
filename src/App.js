@@ -56,38 +56,44 @@ const App = () => {
             <p id="findCountry">Find Countries Details</p>
             <input placeholder='Enter Country Name' value={countryName} onChange={changeName} className="input" />
 
-            {showSingleCountry ?
-                <div key={singleCountryDetail.name}>
-                    <h2>{singleCountryDetail.name}</h2>
-                    <p><u>Capital: </u> {singleCountryDetail.capital}</p>
-                    <p><u>Population: </u> {singleCountryDetail.population}</p>
-                    <p><u>Languages: </u></p>
-                    {singleCountryDetail.languages.map(lang => <p key={lang.name}>{lang.name}</p>)}
-                    <img src={singleCountryDetail.flag} alt="flag" height="100" width="100" />
-                </div>
-                : ''
-            }
+            <div>
+                {showSingleCountry ?
+                    <div key={singleCountryDetail.name}>
+                        <h2>{singleCountryDetail.name}</h2>
+                        <p><u>Capital: </u> {singleCountryDetail.capital}</p>
+                        <p><u>Population: </u> {singleCountryDetail.population}</p>
+                        <p><u>Languages: </u></p>
+                        {singleCountryDetail.languages.map(lang => <p key={lang.name}>{lang.name}</p>)}
+                        <img src={singleCountryDetail.flag} alt="flag" height="100" width="100" />
+                    </div>
+                    : ''
+                }
+            </div>
 
-            {
-                countryToShow.length > 10 ?
+            <div>
 
-                    <p>Too many matches,specify another filter</p>
-                    :
-                    countryToShow.length === 0 ?
+                {
+                    countryToShow.length > 10 ?
 
-                        <p>No Country Found :(</p>
+                        <p>Too many matches,specify another filter</p>
                         :
-                        <div className="countryList">
-                            {
-                                countryToShow.length > 1 && countryToShow.map(x =>
-                                    <DisplayCountryOption key={x.name} country={x} />
-                                )
-                            }
-                        </div>
-            }
+                        countryToShow.length === 0 ?
+
+                            <p>No Country Found :(</p>
+                            :
+                            <div className="countryList">
+                                {
+                                    countryToShow.length > 1 && countryToShow.map(x =>
+                                        <DisplayCountryOption key={x.name} country={x} />
+                                    )
+                                }
+                            </div>
+                }
+
+            </div>
 
             <div id="footer">
-                Made with <span role="img" aria-label="heart">💚</span> by Anuradha Aggarwal
+                Made with <span role="img" aria-label="heart"> 💙</span> by Anuradha Aggarwal
                 <div>
                     <a href="https://github.com/anuradha9712"  ><FontAwesomeIcon icon={faGithub} /></a>
                     <a href="https://www.linkedin.com/in/anuradha-aggarwal-4a2751107/"><FontAwesomeIcon icon={faLinkedin} /></a>
